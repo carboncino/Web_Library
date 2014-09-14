@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+			<script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
+			<script>
+				$(document).ready(function()
+					{
+  					$("#nascondi").click(function(){$(".location").fadeOut(500);});
+  					$("#mostra").click(function(){$(".location").fadeIn(500);});
+					});
+		</script>
+		</head>
+		<body>
+		
+		<div class="conten">
+			<div class="header">
+
+			</div>
+			<div class="body_sx">
+			<div class="cont_sx">
+					<div class="cont_sx">
+					<ul>
+						<li><b><a href="home.html">HOME</a></b></li>
+						<li><b><a href="reg.html">REGISTRATI</a></b></li>
+						<li><b><a href="myBook.html">MyBook</b></li>
+						<li><b><a href="elencoLibri.html">ELENCO LIBRI</a></b></li>
+						<li><b><a href="Noleggia.html">NOLEGGIA</a></b></li>
+						<li><b><a href="admin.html">ADMINISTRATOR</a></b></li>
+					</ul>
+			</div>
+			</div>
+			</div>
+			
+			<div class="body_dx">
+			
+			
+				<p><h4>Web Library nasce da un idea per poter digitalizzare ciò che ora intendiamo libreria.
+						questa versione digitale di libreria fornirà vari servizi utili alla vendita o noleggio di una ricca collezione di libri.</h4></p>
+				<button id="mostra">Visualizza locazione libri</button>
+				<button id="nascondi">Nascondi locazione libri</button>
+			<div class="location">
+				<table>
+					<tr>
+						<td>&nbsp;</td>
+						<th bgcolor="#0099FF">A</th>
+						<td>&nbsp;</td>
+						<th bgcolor="#0099FF">B</th>
+						<td>&nbsp;</td>
+						<th bgcolor="#0099FF">C</th>
+						<td>&nbsp;</td>
+						<th bgcolor="#0099FF">D</th>
+						<td>&nbsp;</td>
+						<th bgcolor="#0099FF">E</th>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">1</th>
+						<td><a href="LibriPages/piramideFango.html"><img src="Libri/immagini/piramideFango.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">11</th>
+						<td><a href="LibriPages/desiderio.html"><img src="Libri/immagini/desiderioTutti.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">21</th>
+						<td><a href="LibriPages/cento.html"><img src="Libri/immagini/centoLibri.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">31</th>
+						<td><a href="LibriPages/quattro.html"><img src="Libri/immagini/quattroSberle.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">41</th>
+						<td><a href="LibriPages/quando.html"><img src="Libri/immagini/daQuando.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">2</th>
+						<td><a href="LibriPages/mutevoleVer.html"><img src="Libri/immagini/mutevoleVer.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">12</th>
+						<td><a href="LibriPages/adulterio.html"><img src="Libri/immagini/adulterio.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">22</th>
+						<td><a href="LibriPages/scelte.html"><img src="Libri/immagini/scelteFatto.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">32</th>
+						<td><a href="LibriPages/allegiant.html"><img src="Libri/immagini/allegiant.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">42</th>
+						<td><a href="LibriPages/trono.html"><img src="Libri/immagini/tronoSpade.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">3</th>
+						<td><a href="LibriPages/vacanzeGiallo.html"><img src="Libri/immagini/vacanzeGiallo.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">13</th>
+						<td><a href="LibriPages/albergo.html"><img src="Libri/immagini/albergoItalia.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">23</th>
+						<td><a href="LibriPages/idea.html"><img src="Libri/immagini/ideaDestino.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">33</th>
+						<td><a href="LibriPages/giorgione.html"><img src="Libri/immagini/giorgione.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">43</th>
+						<td><a href="LibriPages/sposa.html"><img src="Libri/immagini/sposaSilenziosa.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">4</th>
+						<td><a href="LibriPages/shadow.html"><img src="Libri/immagini/shadow.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">14</th>
+						<td><a href="LibriPages/caso.html"><img src="Libri/immagini/casoSforza.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">24</th>
+						<td><a href="LibriPages/fuoco.html"><img src="Libri/immagini/fuocoSangue.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">34</th>
+						<td><a href="LibriPages/dieta.html"><img src="Libri/immagini/dietaMozzi.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">44</th>
+						<td><a href="LibriPages/eco.html"><img src="Libri/immagini/ecoRispose.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">5</th>
+						<td><a href="LibriPages/cuore.html"><img src="Libri/immagini/fondoCuore.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">15</th>
+						<td><a href="LibriPages/cardellino.html"><img src="Libri/immagini/cardellino.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">25</th>
+						<td><a href="LibriPages/sicilia.html"><img src="Libri/immagini/buttanissimaSicilia.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">35</th>
+						<td><a href="LibriPages/mioDisastro.html"><img src="Libri/immagini/mioDisastro.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">45</th>
+						<td><a href="LibriPages/nero.html"><img src="Libri/immagini/neroArgento.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">6</th>
+						<td><a href="LibriPages/fantasmi.html"><img src="Libri/immagini/fantasmiPassato.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">16</th>
+						<td><a href="LibriPages/paura.html"><img src="Libri/immagini/nonDirmiPaura.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">26</th>
+						<td><a href="LibriPages/october.html"><img src="Libri/immagini/octoberList.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">36</th>
+						<td><a href="LibriPages/sirena.html"><img src="Libri/immagini/laSirena.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">46</th>
+						<td><a href="LibriPages/disastroSempre.html"><img src="Libri/immagini/disastroPersempre.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<th bgcolor="#009900">7</th>
+						<td><a href="LibriPages/storia.html"><img src="Libri/immagini/storiaLadra.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">17</th>
+						<td><a href="LibriPages/sentiero.html"><img src="Libri/immagini/sentieroProfumi.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">27</th>
+						<td><a href="LibriPages/moglie.html"><img src="Libri/immagini/moglieMagica.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">37</th>
+						<td><a href="LibriPages/orizzonte.html"><img src="Libri/immagini/orizzonteFuoco.jpg" width="130" height="210"></a></td>
+						<th bgcolor="#009900">47</th>
+						<td><a href="LibriPages/confessioni.html"><img src="Libri/immagini/confessioniSquart.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td><a href="LibriPages/misura.html"><img src="Libri/immagini/misuraFelicita.jpg" width="130" height="210"></a></td>
+						<td>18</td>
+						<td><a href="LibriPages/colpa.html"><img src="Libri/immagini/colpaStelle.jpg" width="130" height="210"></a></td>
+						<td>28</td>
+						<td><a href="LibriPages/fidi.html"><img src="Libri/immagini/fidiMe.jpg" width="130" height="210"></a></td>
+						<td>38</td>
+						<td><a href="LibriPages/buio.html"><img src="Libri/immagini/buioSiepe.jpg" width="130" height="210"></a></td>
+						<td>48</td>
+						<td><a href="LibriPages/insurgent.html"><img src="Libri/immagini/insurgent.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td><a href="LibriPages/abazia.html"><img src="Libri/immagini/abaziaCento.jpg" width="130" height="210"></a></td>
+						<td>19</td>
+						<td><a href="LibriPages/vita.html"><img src="Libri/immagini/vitaVita.jpg" width="130" height="210"></a></td>
+						<td>29</td>
+						<td><a href="LibriPages/armatura.html"><img src="Libri/immagini/armataSonnambuli.jpg" width="130" height="210"></a></td>
+						<td>39</td>
+						<td><a href="LibriPages/segreto.html"><img src="Libri/immagini/segretoCamera.jpg" width="130" height="210"></a></td>
+						<td>49</td>
+						<td><a href="LibriPages/china.html"><img src="Libri/immagini/cinaStudy.jpg" width="130" height="210"></a></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td><a href="LibriPages/clienti.html"><img src="Libri/immagini/clientiAvrenos.jpg" width="130" height="210"></a></td>
+						<td>20</td>
+						<td><a href="LibriPages/incolore.html"><img src="Libri/immagini/incoloreTazaki.jpg" width="130" height="210"></a></td>
+						<td>30</td>
+						<td><a href="LibriPages/splendido.html"><img src="Libri/immagini/splendidoDisastro.jpg" width="130" height="210"></a></td>
+						<td>40</td>
+						<td><a href="LibriPages/estate.html"><img src="Libri/immagini/estateMontaigne.jpg" width="130" height="210"></a></td>
+						<td>50</td>
+						<td><a href="LibriPages/danza.html"><img src="Libri/immagini/danzaDraghi.jpg" width="130" height="210"></a></td>
+					</tr>
+				</table>
+						
+			</div>
+			</div>		
+		</div>
+		</body>
+	</html>
+

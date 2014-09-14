@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+
+			</div>
+			<div class="body_sx">
+			<div class="cont_sx">
+					<ul>
+						<li><b><a href="home.html">HOME</a></b></li>
+						<li><b><a href="reg.html">REGISTRATI</a></b></li>
+						<li><b><a href="myBook.html">MyBook</b></li>
+						<li><b><a href="elencoLibri.html">ELENCO LIBRI</a></b></li>
+						<li><b><a href="Noleggia.html">NOLEGGIA</a></b></li>
+						<li><b><a href="admin.html">ADMINISTRATOR</a></b></li>
+					</ul>
+			</div>
+			</div>
+			<div class="body_dx">
+				<p><h4>In questa pagina potrai effettuare la registrazione al sito. <br>
+							Con la  compilazioni di alcuni semplici dati potrai usufruire di alcune semplici funzioni !! <br>
+							 come noleggiare un libro ! </p><br>
+				<form method="post" action="reg2.php">
+						<table  class="centrata">
+							<tr><td align="right"><label>Nome utente </label></td>
+									<td><input type="text" name="nome"></td>
+							</tr>
+							<tr><td align="right"><label>Cognome </label></td>
+									<td><input type="text" name="cognome"></td>
+							</tr>
+							<tr><td align="right"><label>E-Mail </label></td>
+									<td><input type="email" name="email"></td>
+							</tr>
+							<tr><td align="right"><label>Password </label></td>
+									<td><input type="password" name="password"></td>
+							</tr>
+							<tr><td align="right"><label>Sesso </label></td>
+									<td><label>Maschio </label><input type="radio" name="sesso" value="Maschio" checked="checked"></br>
+											<label>Femmina </label><input type="radio" name="sesso" value="Femmina"></td>
+							</tr>
+							<tr><td>&nbsp;</td>
+									<td><input type="submit" name="submit" value="Registra"><input type="reset" value="Cancella"></td>
+							</tr>
+						</table>
+				</form>
+			</div>
+		</div>
+		</body>
+	</html>
+

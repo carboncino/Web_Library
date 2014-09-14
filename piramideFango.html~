@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+						IMMAGINE WEB_LIBRARY
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="reg.html">REGISTRATI</a></li>
+						<li>LogIn</li>
+						<li><a href="elencoLibri.html">Elenco Libri</a></li>
+						<li>Noleggia un libro</li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<table>
+					<tr><td bgcolor="red"><h1>LA PIRAMIDE DI FANGO<br></h1></td></tr>
+					<tr><td><img src="Libri/immagini/piramideFango.jpg"></td></tr>
+					<tr align="left"><td><ul>
+												<li>AUTORE : Camilleri Andrea</li>
+												<li>EDITORE : Sellerio editore palermo</li>
+											</ul></td></tr>
+					<tr><td bgcolor="red"><h2>DESCRIZIONE</h2></td></tr>
+					<tr><td><p>"Si sono aperte le cateratte del cielo. I tuoni erompono con fragore. Nel generale ottenebramento, e sotto la pioggia implacabile, tutto si impantana e smotta. Il fango monta e dilaga: è 	una coltre di spento grigiore sulle lesioni e sulle frane. La brutalità della natura si vendica della politica dei governi corrotti, che non si curano del rispetto geologico; e assicurano appalti e franchigie alle società di comodo e alle mafie degli speculatori. A Vigàta dominano le sfumature opache e le tonalità brune delle ombre che si allungano sull'accavallato disordine dei paesaggi desolati; sui lunari cimiteri di scabre rocce, di cretti smorti, e di relitti metallici che sembrano ossificati. Questa sgangherata sintassi di crepature e derive ha oscuri presagi. E si configura come il rovescio tragico dell'allegra selvatichezza vernacolare di Catarella, che inventa richiami fonici ed equivalenze tra 'fango' e 'sangue'; e con le confuse lettere del suo alfabeto costruisce topografie che inducono all'errore. Del resto, macchiate di sangue sono le ferite fangose del paesaggio; e l'errore è consustanziale al labirinto illusionistico dentro il quale i clan mafiosi vorrebbero sospingere il commissario Montalbano per fuorviarlo, e convincerlo che il delitto sul quale sta indagando è d'onore e non di mafia. La vicenda ha tratti sfuggenti, persino elusivi..." (Salvatore Silvano Nigro)</p></td></tr>									
+				</table>
+			</div>
+		</div>
+		</body>
+	</html>
+

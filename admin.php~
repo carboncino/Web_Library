@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+			<script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
+			<script>
+				$(document).ready(function()
+					{
+						$(".canc").hide();
+  					$("#canc").click(function(){$(".canc").show(1000);});
+						$(".modifica").hide();
+  					$("#mod").click(function(){$(".modifica").show(1000);});
+					});
+			</script>
+		</head>
+		<body>
+		
+		<div class="conten_noleg">
+			<div class="header">
+
+			</div>
+			<div class="body_sx_noleg">
+			<div class="cont_sx_noleg">
+						<ul>
+						<li><b><a href="home.html">HOME</a></b></li>
+						<li><b><a href="reg.html">REGISTRATI</a></b></li>
+						<li><b><a href="myBook.html">MyBook</b></li>
+						<li><b><a href="elencoLibri.html">ELENCO LIBRI</a></b></li>
+						<li><b><a href="Noleggia.html">NOLEGGIA</a></b></li>
+						<li><b><a href="admin.html">ADMINISTRATOR</a></b></li>
+					</ul>
+			</div>
+			</div>
+			<div class="body_dx_noleg">
+			
+			<table border="1">
+				
+				<?
+					$db_host = "localhost";
+					$db_user = "carboneMarco";
+					$db_pass = "cardellino543";
+					$db_name = "carboneMarco";
+					$admin = $_REQUEST['nome'];
+					$pass = $_REQUEST['password'];
+				
+					if($admin!=null && $pass!=null)
+						{
+							if($admin =="admin" && $pass==48563)
+								{
+									$db = mysql_connect($db_host,$db_user,$db_pass) or die ('ERRORE CONNESSIONE DB');
+									mysql_select_db($db_name, $db) or die ('ERRORE SELEZIONE DB');
+									$query = "SELECT * FROM Utenti";
+
+									$result = mysql_query($query);
+									$num= mysql_num_rows($result);
+									$i=0;
+									if($num < 1)
+									{
+										echo "errore ricerca";
+									}
+									else{
+									while($num > $i)
+											{
+												$id = mysql_result($result,$i,"id");
+												$nome = mysql_result($result,$i,"nome");
+												$cognome = mysql_result($result,$i,"cognome");
+												$password = mysql_result($result,$i,"password");
+												$id_libro = mysql_result($result,$i,"id_libro");
+												$mail = mysql_result($result,$i,"e_mail");
+												$sesso = mysql_result($result,$i,"sesso");
+												echo"<tr><td>$id</td><td>$nome</td><td>$cognome</td><td>$password</td><td>$id_libro</td><td>$mail</td><td>$sesso</td></tr>";
+												$i++;
+											}
+											}
+									echo("
+												<p><h2>Utenti presenti nel DB<br><br></h2></p>
+												<tr bgcolor='1E90FF'><th>ID#</th><th>Nome</th><th>Cognome</th><th>password</th><th>ID_libro</th><th>e_mail</th><th>Sesso</th></tr>
+												<table>
+													<tr>
+														<td><button id='canc'><img src='images/black393.png'> - Cancella </button></td>
+														<td><div class='canc'>
+															<form method='POST' action='canc.php'>
+																<table border='1'>
+																	<tr><td><label>Inserire ID utente</label></td><td><input type='text' name='ID' size='2'></td><td><input type='submit' name='submit' value='cancella'></td></tr>
+																</table>
+															</form>
+																</div>
+														</td>
+													</tr>
+													<tr>
+														<td><button id='mod'><img src='images/write13.png'> - Modifica</button></td>
+														<td><div class='modifica'>
+																<form method='POST' action='modifica.php'>
+																	<table border='1'>
+																		<tr><td><label>Inserire ID utente</label></td><td><input type='text' name='ID' size='2'></td><td><input type='submit' name='submit' value='Visualizza paramteri'></td></tr>
+																	</table>
+																</form>
+																</div>
+														</td>
+													</tr>
+											</table>");
+								}
+
+								else{
+										echo"<h2>***ATTENZIONE***<br>Errore credenziali non corretti</h2><br>";
+										}
+						}
+						else{
+							echo"<h2>***ATTENZIONE***<br>Errore compilazione campi</h2><br>";
+								}
+
+				?>	
+				<button onclick="document.location.href='admin.html';" ><img src="images/back1.png">  Indietro</button>
+				</table>
+				
+			</div>
+		</div>
+		</body>
+	</html>

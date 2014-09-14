@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+						IMMAGINE WEB_LIBRARY
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="reg.html">REGISTRATI</a></li>
+						<li>LogIn</li>
+						<li><a href="elencoLibri.html">Elenco Libri</a></li>
+						<li>Noleggia un libro</li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<table>
+					<tr><td bgcolor="red"><h1>IL SENTIERO DEI PROFUMI</h1></td></tr>
+					<tr><td><br><img alt="foto Libro" src="Libri/immagini/sentieroProfumi.jpg"></td></tr>
+					<tr align="left"><td><ul>
+												<li>AUTORE : Caboni Cristina</li>
+												<li>EDITORE : Garzanti Libri</li>
+											</ul></td></tr>
+					<tr><td bgcolor="red"><h2>DESCRIZIONE</h2></td></tr>
+					<tr><td><p>Elena non si fida di nessuno. Ha perso ogni certezza e non crede più nell'amore. Solo quando crea i suoi profumi riesce ad allontanare tutte le insicurezze. Solo avvolta dalle essenze dei fiori, dei legni e delle spezie sa come sconfiggere le sue paure. I profumi sono il suo sentiero verso il cuore delle persone. Parlano dei pensieri più profondi, delle speranze più nascoste: l'iris regala fiducia, la mimosa dona la felicità, la vaniglia protegge, la ginestra aiuta a non darsi per vinti mai. Ed Elena da sempre ha imparato a essere forte. Dal giorno in cui la madre se n'è andata via, abbandonandola quando era solo una ragazzina in cerca di affetto e carezze. Da allora ha potuto contare solo su sé stessa. Da allora ha chiuso le porte delle sue emozioni. Adesso che ha ventisei anni il destino continua a metterla alla prova, ma il suo dono speciale le indica la strada da seguire. Una strada che la porta a Parigi in una delle maggiori botteghe della città, dove le fragranze si preparano ancora secondo l'antica arte dei profumieri. Le sue creazioni in poco tempo conquistano tutti. Elena ha un modo unico di capire ed esaudire i desideri: è in grado di realizzare il profumo giusto per riconquistare un amore perduto, per superare la timidezza, per ritrovare la serenità. Ma non è ancora riuscita a creare l'essenza per fare pace con il suo passato, per avere il coraggio di perdonare. C'è un'unica persona che ha la chiave per entrare nelle pieghe della sua anima e guarire le sue ferite: Cail.</p></td></tr>									
+				</table>
+			</div>
+		</div>
+		</body>
+	</html>

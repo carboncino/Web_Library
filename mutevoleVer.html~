@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+						IMMAGINE WEB_LIBRARY
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="reg.html">REGISTRATI</a></li>
+						<li>LogIn</li>
+						<li><a href="elencoLibri.html">Elenco Libri</a></li>
+						<li>Noleggia un libro</li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<table>
+					<tr><td bgcolor="red"><h1>UNA MUTEVOEL VERITA'</h1></td></tr>
+					<tr><td><br><img src="Libri/immagini/mutevoleVer.jpg"></td></tr>
+					<tr align="left"><td><ul>
+												<li>AUTORE : Carofiglio Gianrico</li>
+												<li>EDITORE : Einaudi</li>
+											</ul></td></tr>
+					<tr><td bgcolor="red"><h2>DESCRIZIONE</h2></td></tr>
+					<tr><td><p>Un buon investigatore deve essere capace di costruire una storia, immaginare che cosa è successo prima e dopo il crimine, come in un romanzo. Poi, costruita la storia, deve andare in cerca di ciò che la conferma e la contraddice. Così pensa il maresciallo dei carabinieri Pietro Fenoglio, piemontese trapiantato a Bari, che si trova a indagare su un omicidio dove tutto appare troppo chiaro fin dall'inizio. Non fosse che al principale sospettato, su cui si concentra ogni indizio, mancava qualsiasi movente per commettere il delitto.</p></td></tr>									
+				</table>
+			</div>
+		</div>
+		</body>
+	</html>
+

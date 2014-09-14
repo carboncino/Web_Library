@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+						IMMAGINE WEB_LIBRARY
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="reg.html">REGISTRATI</a></li>
+						<li>LogIn</li>
+						<li><a href="elencoLibri.html">Elenco Libri</a></li>
+						<li>Noleggia un libro</li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<table>
+					<tr><td bgcolor="red"><h1>IL DESIDERIO DI TUTTI</h1></td></tr>
+					<tr><td><br><img alt="foto Libro" src="Libri/immagini/desiderioTutti.jpg"></td></tr>
+					<tr align="left"><td><ul>
+												<li>AUTORE : Piccolo Francesco</li>
+												<li>EDITORE : Einaudi</li>
+											</ul></td></tr>
+					<tr><td bgcolor="red"><h2>DESCRIZIONE</h2></td></tr>
+					<tr><td><p>I funerali di Berlinguer e la scoperta del piacere di perdere, il rapimento Moro e il tradimento del padre, il coraggio intellettuale di Parise e il primo amore che muore il giorno di San Valentino, il discorso con cui Bertinotti cancellò il governo Prodi e la resa definitiva al gene della superficialità, la vita quotidiana durante i vent'anni di Berlusconi al potere, una frase di Craxi e un racconto di Carver... Se è vero che ci mettiamo una vita intera a diventare noi stessi, quando guardiamo all'indietro la strada è ben segnalata, una scia di intuizioni, attimi, folgorazioni e sbagli: il filo dei nostri giorni. Francesco Piccolo ha scritto un libro che è insieme il romanzo della sinistra italiana e un racconto di formazione individuale e collettiva: sarà impossibile non rispecchiarsi in queste pagine (per affinità o per opposizione), rileggendo parole e cose, rivelazioni e scacchi della nostra storia personale, e ricordando a ogni pagina che tutto ci riguarda. "Un'epoca quella in cui si vive - non si respinge, si può soltanto accoglierla".</p></td></tr>									
+				</table>
+			</div>
+		</div>
+		</body>
+	</html>

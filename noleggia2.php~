@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><b><a href="home.html">HOME</a></b></li>
+						<li><b><a href="reg.html">REGISTRATI</a></b></li>
+						<li><b><a href="myBook.html">MyBook</b></li>
+						<li><b><a href="elencoLibri.html">ELENCO LIBRI</a></b></li>
+						<li><b><a href="Noleggia.html">NOLEGGIA</a></b></li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<?
+					$db_host = "localhost";
+					$db_user = "carboneMarco";
+					$db_pass = "cardellino543";
+					$db_name = "carboneMarco";
+					$id_libro = $_REQUEST['ID_libro'];
+					$nome = $_REQUEST['nome'];
+					$pass = $_REQUEST['password'];
+					if($nome!=null && $pass!=null && $id_libro!=null)
+						{
+							$db = mysql_connect($db_host,$db_user,$db_pass) or die ('ERRORE CONNESSIONE DB');
+							mysql_select_db($db_name, $db) or die ('ERRORE SELEZIONE DB');
+							
+										$query3="SELECT stato FROM Libri WHERE id='$id_libro' AND stato='NON DISPONIBILE'";
+										$result = mysql_query($query3);
+										$num= mysql_num_rows($result);
+										
+										if($num < 1)
+										{
+											$query = "UPDATE Utenti SET id_libro='$id_libro' WHERE nome='$nome' AND password='$pass'";
+											$query2= "UPDATE Libri SET stato='NON DISPONIBILE' WHERE id ='$id_libro'";
+
+											if(mysql_query($query))
+											{
+												echo("<br><h2>Noleggio effettuato con successo.</h2>"); 
+											}
+											else{
+											echo("<br><h2>1OPS!! Qualcosa è andato storto..riprovare.</h2>");
+											}
+											if(mysql_query($query2))
+											{
+												echo("<br>"); 
+											}
+											else{
+											echo("<br><h2>2OPS!! Qualcosa è andato storto..riprovare.</h2>");
+											}
+										}
+										else{
+										echo("<br><h2> Spiacenti! Il ibro selezionato è fuori sede</h2><br>");
+
+										}	
+							}
+						else{
+							echo "<h2>errore riempimento campi </h2>";
+ 								}				
+
+				?>	
+				<input type="button" onclick="document.location.href='Noleggia.html';" value="Indietro">
+			</div>
+		</div>
+		</body>
+	</html>
+

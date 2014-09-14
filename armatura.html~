@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+						IMMAGINE WEB_LIBRARY
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="reg.html">REGISTRATI</a></li>
+						<li>LogIn</li>
+						<li><a href="elencoLibri.html">Elenco Libri</a></li>
+						<li>Noleggia un libro</li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<table>
+					<tr><td bgcolor="red"><h1>L'ARMATURA DEI SONNAMBULI</h1></td></tr>
+					<tr><td><br><img alt="foto Libro" src="Libri/immagini/armaturaSonnambuli.jpg"></td></tr>
+					<tr align="left"><td><ul>
+												<li>AUTORE : Wu Mang</li>
+												<li>EDITORE : Einaudi</li>
+											</ul></td></tr>
+					<tr><td bgcolor="red"><h2>DESCRIZIONE</h2></td></tr>
+					<tr><td><p>1794. Parigi ha solo notti senza luna. Marat, Robespierre e Saint-Just sono morti, ma c'è chi giura di averli visti all'ospedale di Bicêtre. Un uomo in maschera si aggira sui tetti: è l'Ammazzaincredibili, eroe dei quartieri popolari, difensore della plebe rivoluzionaria, ieri temuta e oggi umiliata, schiacciata da un nuovo potere. Dicono che sia un italiano. Orde di uomini bizzarri riempiono le strade, scritte enigmatiche compaiono sui muri e una forza invisibile condiziona i destini, in città e nei remoti boschi dell'Alvernia. Qualcuno la chiama "fluido", qualcun altro Volontà. Guarda, figliolo: un giorno tutta questa controrivoluzione sarà tua. Ma è meglio cominciare dall'inizio. Anzi: dal giorno in cui Luigi Capeto incontrò Madama Ghigliottina.
+</p></td></tr>									
+				</table>
+			</div>
+		</div>
+		</body>
+	</html>

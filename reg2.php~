@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Web Library</title>
+			<meta charset="utf-8"/>
+			<style type="text/css"></style>
+			<link rel="stylesheet" type="text/css" href="skin.css">
+		</head>
+		<body>
+		<div class="conten">
+			<div class="header">
+
+			</div>
+			<div class="body_sx">
+					<ul>
+						<li><b><a href="home.html">HOME</a></b></li>
+						<li><b><a href="reg.html">REGISTRATI</a></b></li>
+						<li><b><a href="myBook.html">MyBook</b></li>
+						<li><b><a href="elencoLibri.html">ELENCO LIBRI</a></b></li>
+						<li><b><a href="Noleggia.html">NOLEGGIA</a></b></li>
+						<li>Contatti</li>
+					</ul>
+			</div>
+			<div class="body_dx">
+				<?
+					$db_host = "localhost";
+					$db_user = "carboneMarco";
+					$db_pass = "cardellino543";
+					$db_name = "carboneMarco";
+					$nome = $_REQUEST['nome'];
+					$cognome = $_REQUEST['cognome'];
+					$mail = $_REQUEST['email'];
+					$sesso = $_REQUEST['sesso'];
+					$pass = $_REQUEST['password'];
+					if($nome!=null && $cognome!=null && $pass!=null && $mail!=null && $sesso!=null)
+						{
+							$db = mysql_connect($db_host,$db_user,$db_pass) or die ('ERRORE CONNESSIONE DB');
+							mysql_select_db($db_name, $db) or die ('ERRORE SELEZIONE DB');
+							
+							$query = "SELECT nome,password,cognome,e_mail 
+												FROM Utenti 
+												WHERE nome = '$nome' AND password='$pass' AND e_mail='$mail' AND cognome='$cognome'";
+
+ 							$risultato = mysql_query($query);
+
+							$num = mysql_num_rows($risultato);
+ 							if($num == '0')
+								{
+ 									$query2 = "INSERT INTO Utenti (nome,cognome,password,e_mail,sesso) VALUES('$nome','$cognome','$pass','$mail','$sesso')";
+
+									if(mysql_query($query2))
+										{
+											echo("<br><h2>Congratulazioni !! Registrazione effettuata con successo.</h2>"); 
+										}
+									else{
+											echo("<br><h2>OPS!! Qualcosa è andato storto..riprovare.</h2>");
+											}
+								}
+								else{
+											echo"<h2>errore record gia esistente</h2>";
+										}							
+
+							}
+							  else{
+										echo "<h2>***ATTENZIONE***<br>Errore compilazione campi</h2><br>";
+ 										}				
+				?>	
+				<input type="button" onclick="document.location.href='reg.html';" value="Indietro">
+			</div>
+		</div>
+		</body>
+	</html>
+
+

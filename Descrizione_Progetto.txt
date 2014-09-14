@@ -1,0 +1,28 @@
+Questa applicazione "Web_library" gestirà una piccola biblioteca on-line.
+c'è da precisare che una volta noleggiato un libro la consegna di tale verrà effettuata a mano.
+Link alla home-page : http://localhost/carboneMarco/home.html
+l'applicazione è cosi composta:
+
+- (HOME) link alla home page.
+- (REGISTRATI) da questa pagina un nuovo utente potrà effettuare la registrazione al sito inserendo alcuni semplici campi.
+- (MyBook) questa pagina sarà il portale dell'utente registrato, dove potrà verificare i propri dati e visionare quale libro ha già in possesso ed eventualmente effettuare la restituzione(funzione neccessaria poichè un utente può noleggiare un solo libro per volta!).
+- (ELENCO LIBRI) una semplice pagina per visionare l'elenco di tutti i libri possibili con i relativi link per ulteriori approfondimenti.
+- (NOLEGGIA) pagina cuore di questa applicazione, dove l'utente , una volta effetuata la registrazione potrà noleggiare un libro presente nella lista che apparirà (ogni libro possiede un attributo "stato" che può essere "DISPONIBILE" o "NON DISPONIBILE" sarà quest'attributo a permettere il noleggio dell'libro.
+- (ADMINISTRATOR) pagina accessibile soltanto all'aministratore del sito, il quale potrà : VISUALIZZARE/ELIMINARE/MODIFICARE qualsiasi utente presente nel database.
+
+credenziali utente esempio
+
+Nome : Marco
+Password : ciao
+
+credenziali ADMINISTRATOR
+Nome : admin
+Password : 48563
+
+REQUISITI PROGETTO SODDISFATTI:
+
+1-Utilizzo di HTML e CSS
+2-Utilizzo di PHP e MySQL
+4-Almeno due ruoli (utente_esempio[Marco],aministratore_sito[ADMINISTRATOR])
+6-(ajax)Visualizzazione locazione fisica dei libri nella [HOME]
+6-(ajax)Visualizzazione libri disponibili per il noleggio [NOLEGGIA]
